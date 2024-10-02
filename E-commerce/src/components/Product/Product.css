@@ -1,0 +1,92 @@
+/* Overall product section styling */
+.product-section {
+  
+  text-align: left;
+}
+
+/* Title styling */
+.section-title {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.Deals {
+  color: #a85a32;
+}
+
+/* Styling for the product card container */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  max-width: 250px;
+  margin: 10px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the product image */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  
+}
+
+/* Styling for the product title */
+.product-title {
+  font-size: 1.2rem;
+  color: #c8592b;
+  margin: 10px 0 5px 0;
+}
+
+/* Styling for the product description */
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styling for the product price */
+.product-price {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for the 'Bekijk deal' button */
+.deal-button {
+  background-color: #c8592b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.deal-button:hover {
+  background-color: #b34720;
+  transform: scale(1.05);
+}
+
+/* Styling for the product list container */
+.product-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
