@@ -32,41 +32,14 @@ const ProductComponent = () => {
       price: "€ 499,99",
       image: p4,
     },
-    {
-      title: "Vodafone",
-      description:
-        "Iphone 14 – Profiteer nú van hoge kortingen met de Vodafone Runners deals.",
-      price: "€ 499,99",
-      image: p4,
-    },
-    {
-      title: "Vodafone",
-      description:
-        "Iphone 14 – Profiteer nú van hoge kortingen met de Vodafone Runners deals.",
-      price: "€ 499,99",
-      image: p4,
-    },
-    {
-      title: "Vodafone",
-      description:
-        "Iphone 14 – Profiteer nú van hoge kortingen met de Vodafone Runners deals.",
-      price: "€ 499,99",
-      image: p4,
-    },
-    {
-      title: "Vodafone",
-      description:
-        "Iphone 14 – Profiteer nú van hoge kortingen met de Vodafone Runners deals.",
-      price: "€ 499,99",
-      image: p4,
-    },
   ];
 
   return (
     <div className="product-section container">
       <h1 className="section-title">
-        De Beste Black Friday <br />
-        <span className="Deals">Deals Van 2023</span>
+        Black Friday
+        <span className="Deals"> Elektronica</span> deals en <br />
+        Aanbiedingen
       </h1>
       <div className="product-list">
         {productData.map((product, index) => (
@@ -84,7 +57,11 @@ const ProductComponent = () => {
             </div>
           </div>
         ))}
-        <h3 className="Deals">Bekijk alle black friday deals van un</h3>
+      </div>
+      <div className="p-5 align-items-center d-flex justify-content-center">
+        <span className="bottom-line text-center mt-3 p-3 fs-3">
+          Bekijk alle black friday deals van un
+        </span>
       </div>
     </div>
   );

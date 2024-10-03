@@ -11,7 +11,8 @@ import client6 from "../../assets/client6.png";
 import client7 from "../../assets/client7.png";
 import client8 from "../../assets/client8.png";
 import Footer from "../Footer/Footer";
-import Product from "../Product/Product";
+import Product1 from "../Product/Product1";
+import Product2 from "../Product/Product2";
 
 const Home = () => {
   return (
@@ -79,7 +80,8 @@ const Home = () => {
           <img src={client8} alt="client8" width={150} height={100} />
         </div>
       </div>
-      <Product />
+      <Product1 />
+      <Product2 />
       <Footer />
     </>
   );

@@ -1,6 +1,5 @@
 /* Overall product section styling */
 .product-section {
-  
   text-align: left;
 }
 
@@ -8,7 +7,7 @@
 .section-title {
   font-size: 3.5rem;
   color: black;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 30px;
 }
 .Deals {
@@ -40,7 +39,6 @@
   height: auto;
   border-bottom: 1px solid #eee;
   margin-bottom: 15px;
-  
 }
 
 /* Styling for the product title */
@@ -89,4 +87,11 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.bottom-line {
+  background-color: #a85a32;
+  color: white;
+  border: 1px solid;
+  border-radius: 1%;
 }
