@@ -24,8 +24,6 @@
 .navbar-right {
   display: flex;
   justify-content: flex-end;
-   
-  
 }
 
 /* Navigation Links */
@@ -90,7 +88,6 @@
 
 /* Custom button styles */
 
-
 /* Button responsiveness */
 @media (max-width: 768px) {
   .custom-btn {
@@ -111,16 +108,23 @@
 
 .clients-logoslide {
   display: inline-flex;
-  justify-content: space-between;
   gap: 50px;
-  animation: 10s slide infinite linear;
+  animation: slide 10s linear infinite; /* Smooth and continuous slide */
 }
 
 .clients-logoslide img {
   margin: 10px;
+  max-height: 100px; /* Adjust height as necessary */
 }
 
-/* Responsive adjustments */
+/* Duplicating the slider for continuous flow */
+.clients-logoslide:before,
+.clients-logoslide:after {
+  content: "";
+  display: inline-flex;
+  gap: 50px;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -130,12 +134,19 @@
   }
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .clients-logoslide {
+    gap: 30px;
+  }
+}
+
 /* Footer Styles */
 .footer {
   padding: 20px 0;
   background-color: #343a40;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 /* Responsiveness: Adjustments for small screens */

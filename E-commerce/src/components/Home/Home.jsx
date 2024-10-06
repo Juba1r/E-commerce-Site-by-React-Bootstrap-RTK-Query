@@ -87,6 +87,16 @@ const Home = () => {
           <img src={client7} alt="client7" width={200} height={100} />
           <img src={client8} alt="client8" width={150} height={100} />
         </div>
+        <div className="clients-logoslide">
+          <img src={client1} alt="client1" width={100} height={90} />
+          <img src={client2} alt="client2" width={150} height={100} />
+          <img src={client3} alt="client3" width={150} height={100} />
+          <img src={client4} alt="client4" width={150} height={100} />
+          <img src={client5} alt="client5" width={150} height={110} />
+          <img src={client6} alt="client6" width={150} height={100} />
+          <img src={client7} alt="client7" width={200} height={100} />
+          <img src={client8} alt="client8" width={150} height={100} />
+        </div>
       </div>
       <Product1 />
       <Product2 />
