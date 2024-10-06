@@ -20,6 +20,7 @@ import Product5 from "../Product/Product5";
 import Product6 from "../Product/Product6";
 import ProductCategory from "../Product/ProductCategory";
 import TextContent from "../../components/TextContent/textContent";
+import LastProduct from "../../components/Product/lastProduct";
 
 const Home = () => {
   return (
@@ -95,6 +96,7 @@ const Home = () => {
       <Product6 />
       <ProductCategory />
       <TextContent />
+      <LastProduct />
       <Footer />
     </>
   );

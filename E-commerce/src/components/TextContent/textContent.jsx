@@ -1,11 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
 import "./textContent.css"; 
 
 const TextContent = () => {
   return (
-    <Container className="text-content-section container">
-      <Row>
-        <Col>
+    <div className="text-content-section container mt-5">
+      <div>
+        <div>
           <h2 className="text-title">Black Friday Deals</h2>
           <p className="text-paragraph">
             Meer Black Friday voor jou tijdens{" "}
@@ -89,9 +88,9 @@ const TextContent = () => {
             hebt. Black Friday Deals zijn er namelijk voor particulieren én voor
             bedrijven.
           </p>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   );
 };
 
