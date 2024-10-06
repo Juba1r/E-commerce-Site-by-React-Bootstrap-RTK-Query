@@ -93,5 +93,6 @@
   background-color: #a85a32;
   color: white;
   border: 1px solid;
-  border-radius: 1%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
 }

@@ -1,0 +1,73 @@
+/* Category section styling */
+.category-section {
+  /* padding: 40px; */
+  text-align: center;
+}
+
+/* Title styling */
+.category-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.category-highlight {
+  color: #a85a32; 
+}
+
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+  grid-template-rows: repeat(5, auto); /* 5 rows layout */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Each category item with image on the left and text on the right */
+.category-item {
+  background-color: #fff;
+
+  padding: 20px;
+  display: flex;
+
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for category images */
+.category-image {
+  width: 60%;
+  height: auto;
+  margin-right: 0;
+}
+
+/* Category name and list container */
+.category-content {
+  flex: 1;
+}
+
+/* Category name styling */
+.category-name {
+  font-size: 2rem;
+  color: #a85a32;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Styling for the list of items */
+/* .category-list {
+  list-style-type: none;
+  padding: 0;
+} */
+
+.category-list-item {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 5px;
+  list-style-type: disc;
+}

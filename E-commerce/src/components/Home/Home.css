@@ -101,6 +101,12 @@
   height: 300px;
   object-fit: cover;
 }
+.gap-btn{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+
+}
 
 
 @keyframes slide {

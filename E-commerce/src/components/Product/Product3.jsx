@@ -37,11 +37,10 @@ const ProductComponent = () => {
   return (
     <div className="product-section container">
       <h1 className="section-title">
-        Black Friday
-        <span className="Deals"> Elektronica</span> deals en <br />
-        Aanbiedingen
+        Black Friday <span className="Deals">Smartphone</span> deals
+        <br /> En aanbiedingen
       </h1>
-      <div className="product-list">
+      <div className="product-list row row-cols-4 d-flex justify-content-center ">
         {productData.map((product, index) => (
           <div key={index} className="product-card">
             <img
@@ -53,15 +52,19 @@ const ProductComponent = () => {
               <h3 className="product-title">{product.title}</h3>
               <p className="product-description">{product.description}</p>
               <h4 className="product-price">{product.price}</h4>
-              <button className="deal-button">Bekijk deal</button>
+              <a href="" className="customp-btn">
+                <span className="btn-text">Bekijk deal</span>
+              </a>
             </div>
           </div>
         ))}
-      </div>
-      <div className="p-5 align-items-center d-flex justify-content-center">
-        <span className="bottom-line text-center mt-3 p-3 fs-3">
-          Bekijk alle black friday deals van un
-        </span>
+        <div className="p-5 w-auto">
+          <a href="" className="customp-btn">
+            <span className="btn-text">
+              Bekijk alle black friday deals van un
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -37,9 +37,10 @@ const ProductComponent = () => {
   return (
     <div className="product-section container">
       <h1 className="section-title">
-        Black Friday
-        <span className="Deals"> Elektronica</span> deals en <br />
+        Black
+        <span className="Deals"> Friday Gaming</span> deals en <br />
         Aanbiedingen
+        <br />
       </h1>
       <div className="product-list row row-cols-4 d-flex justify-content-center ">
         {productData.map((product, index) => (

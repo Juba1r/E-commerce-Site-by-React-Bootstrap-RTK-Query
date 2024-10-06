@@ -1,4 +1,5 @@
 import "./Home.css";
+import "./buttonHome.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaSearch } from "react-icons/fa";
 import banner from "../../assets/frontendposter.png";
@@ -13,6 +14,12 @@ import client8 from "../../assets/client8.png";
 import Footer from "../Footer/Footer";
 import Product1 from "../Product/Product1";
 import Product2 from "../Product/Product2";
+import Product3 from "../Product/Product3";
+import Product4 from "../Product/Product4";
+import Product5 from "../Product/Product5";
+import Product6 from "../Product/Product6";
+import ProductCategory from "../Product/ProductCategory";
+import TextContent from "../../components/TextContent/textContent";
 
 const Home = () => {
   return (
@@ -57,18 +64,18 @@ const Home = () => {
             <p className="hero-subtitle">
               Alle Deals die je nodig hebt tijdens Black Friday
             </p>
-            <div className="button-group mt-4">
-              <a href="#stores" className="btn btn-warning mr-3">
-                Winkels
+            <div className="gap-btn mt-4">
+              <a href="" className="custom-btn">
+                <span className="btn-text">Winkels</span>
               </a>
-              <a href="#deals" className="btn btn-outline-success">
-                Deals
+              <a href="" className="custom-btn">
+                <span className="btn-text">Deals</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="client-container container">
+      <div className="client-container container-fluid">
         <div className="clients-logoslide">
           <img src={client1} alt="client1" width={100} height={90} />
           <img src={client2} alt="client2" width={150} height={100} />
@@ -82,6 +89,12 @@ const Home = () => {
       </div>
       <Product1 />
       <Product2 />
+      <Product3 />
+      <Product4 />
+      <Product5 />
+      <Product6 />
+      <ProductCategory />
+      <TextContent />
       <Footer />
     </>
   );
