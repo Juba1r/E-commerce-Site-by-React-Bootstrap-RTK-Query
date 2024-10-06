@@ -8,7 +8,7 @@ import lastproduct6 from "../../assets/lastproduct6.png";
 
 const LastProduct = () => {
   return (
-    <div className="container my-4">
+    <div className="container my-4 mt-5">
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {/* Card 1 */}
         <div className="col">
@@ -23,12 +23,10 @@ const LastProduct = () => {
                 LET&apos;S GO BLACK FRIDAY WEEKS bij MediaMarkt
               </h5>
               <p className="card-text">
-                Mediamarkt biedt tijdens Black Friday weken kortingen op
-                elektronica, televisies...
+                Mediamarkt biedt tijdens de Black Friday weken kortingen op
+                elektronica, televisies
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>
@@ -49,11 +47,9 @@ const LastProduct = () => {
               </h5>
               <p className="card-text">
                 Zoals elk jaar zijn er weer geweldige aanbiedingen in heel
-                Nederland tijdens...
+                Nederland tijdens Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, sequi.
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>
@@ -74,11 +70,9 @@ const LastProduct = () => {
               </h5>
               <p className="card-text">
                 Dit jaar hebben we een nieuwe toevoeging op BlackFridaydeals.nu.
-                Je kunt vanaf...
+                Je kunt vanaf Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>
@@ -101,9 +95,7 @@ const LastProduct = () => {
                 Het hoge woord is eruit. Nintendo heeft zijn nieuwste console
                 aangekondigd...
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>
@@ -126,9 +118,7 @@ const LastProduct = () => {
                 De afgelopen jaren heeft Black Friday zijn opmars gemaakt in
                 Nederland...
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>
@@ -151,9 +141,7 @@ const LastProduct = () => {
                 Black Friday staat weer voor de deur. Veel mensen vragen zich af
                 welke producten...
               </p>
-            </div>
-            <div className="card-footer">
-              <a href="" className="customp-btn">
+              <a href="" className="customp-btn mt-3">
                 <span className="btn-text">Bekijk deal</span>
               </a>
             </div>

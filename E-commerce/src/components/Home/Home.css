@@ -9,9 +9,6 @@
 }
 
 /* Navbar Styles */
-.navbar-custom {
-  padding: 10px 0;
-}
 
 /* Logo Section */
 .navbar-logo {
@@ -27,7 +24,8 @@
 .navbar-right {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px; /* Adjustable margin-top */
+   
+  
 }
 
 /* Navigation Links */
@@ -68,7 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   color: white;
   padding: 50px 0;
 }
@@ -84,31 +82,45 @@
 }
 
 /* Button Styles */
-.btn-warning {
-  background-color: #a0522d;
-  border-color: #a0522d;
-}
-
-.btn-warning:hover {
-  background-color: #8a451f;
-}
-
-.btn-outline-success:hover {
-  background-color: #28a745;
-  color: white;
-}
-.carousel-item img {
-  height: 300px;
-  object-fit: cover;
-}
-.gap-btn{
+.gap-btn {
   display: flex;
   gap: 50px;
   justify-content: center;
-
 }
 
+/* Custom button styles */
 
+
+/* Button responsiveness */
+@media (max-width: 768px) {
+  .custom-btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Clients Section */
+.client-container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.clients-logoslide {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 50px;
+  animation: 10s slide infinite linear;
+}
+
+.clients-logoslide img {
+  margin: 10px;
+}
+
+/* Responsive adjustments */
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -118,35 +130,25 @@
   }
 }
 
-.clients-logoslide {
-  top: 0;
-  display: inline-block;
-  justify-content: center;
-  gap: 50px;
-  animation: 10s slide infinite linear;
+/* Footer Styles */
+.footer {
+  padding: 20px 0;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
 }
 
-.clients-logoslide img {
-  margin: 10px;
-}
-.client-container {
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* Responsive adjustments */
+/* Responsiveness: Adjustments for small screens */
 @media (max-width: 768px) {
   .navbar-logo img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
 
   .nav-links {
     flex-wrap: wrap;
     gap: 10px;
+    font-size: 0.9rem;
   }
 
   .hero-title {
@@ -159,5 +161,39 @@
 
   .btn {
     font-size: 1rem;
+  }
+
+  .clients-logoslide {
+    gap: 30px;
+  }
+
+  .gap-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .navbar-logo img {
+    width: 80px;
+    height: auto;
+  }
+
+  .custom-btn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
   }
 }

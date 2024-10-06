@@ -40,7 +40,7 @@ const Home = () => {
               </div>
 
               {/* Right Section - Nav Links and Search Icon */}
-              <div className="navbar-right d-flex ">
+              <div className="navbar-right d-flex mt-3">
                 <div className="nav-links">
                   <a href="#electronics">Elektronica</a>
                   <a href="#phones">Telefoons</a>
