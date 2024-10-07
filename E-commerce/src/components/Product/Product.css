@@ -1,6 +1,7 @@
 /* Overall product section styling */
 .product-section {
   text-align: left;
+  padding: 20px; /* Add padding for smaller screens */
 }
 
 /* Title styling */
@@ -95,4 +96,107 @@
   border: 1px solid;
   border-top-right-radius: 30%;
   border-bottom-left-radius: 30%;
+}
+
+/* Responsive Styling */
+
+/* Mobile - Small Screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2.2rem; /* Reduce title size for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .product-card {
+    max-width: 100%; /* Make product cards full width */
+    margin: 10px 0; /* Adjust margin for mobile */
+    padding: 10px;
+  }
+
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .product-description {
+    font-size: 0.85rem;
+  }
+
+  .product-price {
+    font-size: 1rem;
+  }
+
+  .deal-button {
+    font-size: 0.8rem;
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .product-list {
+    justify-content: center; /* Center product list on small screens */
+    gap: 10px;
+  }
+
+  .bottom-line {
+    font-size: 0.9rem; /* Adjust bottom-line font size */
+    border-top-right-radius: 20%; /* Adjust radius for smaller screens */
+    border-bottom-left-radius: 20%;
+  }
+}
+
+/* Tablet - Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.8rem; /* Adjust title size for tablets */
+    margin-bottom: 25px;
+  }
+
+  .product-card {
+    max-width: 200px; /* Slightly reduce card width */
+    margin: 10px;
+  }
+
+  .product-title {
+    font-size: 1.1rem;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .deal-button {
+    font-size: 0.85rem;
+    padding: 9px 18px; /* Adjust button padding for tablets */
+  }
+
+  .product-list {
+    justify-content: center; /* Center products on medium screens */
+    gap: 15px;
+  }
+}
+
+/* Desktop - Large Screens (min-width: 992px) */
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 3.5rem; /* Original font size */
+  }
+
+  .product-card {
+    max-width: 250px; /* Original card size */
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .deal-button {
+    font-size: 0.9rem;
+    padding: 10px 20px; /* Original button padding */
+  }
+
+  .product-list {
+    justify-content: flex-start; /* Align product list to the left */
+  }
 }

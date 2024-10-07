@@ -1,7 +1,8 @@
 import "./Home.css";
 import "./buttonHome.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaBars } from "react-icons/fa";
+import { useState } from "react";
 import banner from "../../assets/frontendposter.png";
 import client1 from "../../assets/client1.png";
 import client2 from "../../assets/client2.png";
@@ -23,12 +24,18 @@ import TextContent from "../../components/TextContent/textContent";
 import LastProduct from "../../components/Product/lastProduct";
 
 const Home = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <div className="home-container">
         <div className="navbar-custom">
           <div className="container">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-items-center">
               {/* Left Section - Logo */}
               <div className="navbar-logo">
                 <img
@@ -39,26 +46,41 @@ const Home = () => {
                 />
               </div>
 
-              {/* Right Section - Nav Links and Search Icon */}
-              <div className="navbar-right d-flex mt-3">
-                <div className="nav-links">
-                  <a href="#electronics">Elektronica</a>
-                  <a href="#phones">Telefoons</a>
-                  <a href="#apple">Apple</a>
-                  <a href="#gaming">Gaming</a>
-                  <a href="#clothing">Kleding</a>
-                  <a href="#leisure">Vrije tijd</a>
-                  <a href="#home-garden">Huis & Tuin</a>
-                  <a href="#care">Verzorging</a>
-                  <a href="#bedding">Bedden</a>
-                </div>
-                <div className="search-bar ml-3">
+              {/* Hamburger Icon for Mobile */}
+              <div
+                className="hamburger-icon d-md-none"
+                onClick={handleToggleMenu}
+              >
+                <FaBars />
+              </div>
+
+              {/* Right Section - Search Icon and Nav Links */}
+              <div className="d-flex align-items-center">
+                <div className="search-bar d-md-none">
+                  
+                  {/* Show search icon on mobile */}
                   <FaSearch className="search-icon" />
                 </div>
               </div>
             </div>
           </div>
+
+          {/* Hamburger Menu (Mobile Only) */}
+          <div className={`navbar-collapse ${isMenuOpen ? "open" : ""}`}>
+            <div className="nav-links">
+              <a href="#electronics">Elektronica</a>
+              <a href="#phones">Telefoons</a>
+              <a href="#apple">Apple</a>
+              <a href="#gaming">Gaming</a>
+              <a href="#clothing">Kleding</a>
+              <a href="#leisure">Vrije tijd</a>
+              <a href="#home-garden">Huis & Tuin</a>
+              <a href="#care">Verzorging</a>
+              <a href="#bedding">Bedden</a>
+            </div>
+          </div>
         </div>
+
         <div className="hero-section d-flex justify-content-center align-items-center">
           <div className="text-center">
             <h1 className="hero-title">Black Friday Deals</h1>

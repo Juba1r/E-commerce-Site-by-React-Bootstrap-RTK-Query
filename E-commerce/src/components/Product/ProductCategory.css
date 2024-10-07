@@ -1,7 +1,7 @@
 /* Category section styling */
 .category-section {
-  /* padding: 40px; */
   text-align: center;
+  padding: 20px; /* Add padding to provide spacing on all screens */
 }
 
 /* Title styling */
@@ -12,25 +12,22 @@
 }
 
 .category-highlight {
-  color: #a85a32; 
+  color: #a85a32;
 }
 
-
+/* Grid layout for category items */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-  grid-template-rows: repeat(5, auto); /* 5 rows layout */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
   gap: 30px;
   margin-top: 30px;
 }
 
-/* Each category item with image on the left and text on the right */
+/* Category item styling */
 .category-item {
   background-color: #fff;
-
   padding: 20px;
   display: flex;
-
   text-align: left;
   transition: box-shadow 0.3s ease;
 }
@@ -41,9 +38,9 @@
 
 /* Styling for category images */
 .category-image {
-  width: 60%;
-  height: auto;
-  margin-right: 0;
+  width: 50%; /* Adjust width for better alignment */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px;
 }
 
 /* Category name and list container */
@@ -60,14 +57,89 @@
 }
 
 /* Styling for the list of items */
-/* .category-list {
-  list-style-type: none;
-  padding: 0;
-} */
-
 .category-list-item {
   font-size: 1.1rem;
   color: #666;
   margin-bottom: 5px;
   list-style-type: disc;
+}
+
+/* Responsive styling */
+
+/* Tablets and medium-sized screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 2.5rem; /* Reduce title size for tablets */
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr; /* 1 column layout for tablets */
+  }
+
+  .category-item {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center;
+  }
+
+  .category-image {
+    width: 70%; /* Make images smaller on tablets */
+    margin: 0 auto 15px auto; /* Center image */
+  }
+
+  .category-name {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .category-list-item {
+    font-size: 1rem; /* Adjust list item size */
+  }
+}
+
+/* Mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .category-title {
+    font-size: 2rem; /* Reduce title size for mobile */
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr; /* 1 column layout for mobile */
+  }
+
+  .category-item {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center;
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .category-image {
+    width: 100%; /* Image takes full width on mobile */
+    margin-bottom: 10px;
+  }
+
+  .category-name {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .category-list-item {
+    font-size: 0.9rem; /* Smaller text for list items */
+  }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .category-title {
+    font-size: 4rem; /* Increase title size for large screens */
+  }
+
+  .category-item {
+    padding: 30px; /* Increase padding on larger screens */
+  }
+
+  .category-name {
+    font-size: 2.5rem; /* Larger font for category names */
+  }
+
+  .category-list-item {
+    font-size: 1.2rem; /* Increase list item font size */
+  }
 }

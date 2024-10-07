@@ -40,7 +40,7 @@ const ProductComponent = () => {
         Black Friday <span className="Deals">Smartphone</span> deals
         <br /> En aanbiedingen
       </h1>
-      <div className="product-list row row-cols-4 d-flex justify-content-center ">
+      <div className="product-list row row-cols-lg-4 d-flex justify-content-center ">
         {productData.map((product, index) => (
           <div key={index} className="product-card">
             <img

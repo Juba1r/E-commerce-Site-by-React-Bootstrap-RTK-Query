@@ -123,7 +123,7 @@ const ProductCategory = () => {
               className="category-image"
             />
             <div className="d-flex justif">
-              <ul className="category-list mt-5">
+              <ul className="category-list mt-5 text-start">
                 <h3 className="category-name ">{category.name}</h3>
                 {category.items.map((item, idx) => (
                   <li key={idx} className="category-list-item">

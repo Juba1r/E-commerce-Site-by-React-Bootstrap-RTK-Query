@@ -143,7 +143,7 @@
 
 /* Footer Styles */
 .footer {
-  padding: 20px 0;
+  
   background-color: #343a40;
   color: white;
   text-align: left;
@@ -158,8 +158,8 @@
 
   .nav-links {
     flex-wrap: wrap;
-    gap: 10px;
     font-size: 0.9rem;
+    flex-direction: column;
   }
 
   .hero-title {
@@ -206,5 +206,74 @@
   .custom-btn {
     padding: 6px 15px;
     font-size: 0.9rem;
+  }
+}
+
+/* Navbar Layout */
+
+/* Initially hide the navbar links on mobile */
+.navbar-collapse {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially offscreen to the right */
+  width: 250px;
+  height: 100vh;
+  background-color: #934f22;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  z-index: 999;
+  transition: right 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-collapse.open {
+  right: 0; /* Menu slides in from the right */
+}
+
+/* Style the links inside the mobile menu */
+.nav-links a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hamburger Icon - Visible on mobile */
+.hamburger-icon {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Search Bar - Visible on mobile, aligned next to the hamburger icon */
+.search-bar {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 55px;
+}
+
+/* Hide search bar and hamburger icon on larger screens */
+@media (min-width: 768px) {
+  .hamburger-icon,
+  .search-bar {
+    display: none;
+  }
+
+  /* Show nav links in a row for larger screens */
+  .navbar-collapse {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    right: 0;
+    margin-right: 40px;
+    
   }
 }

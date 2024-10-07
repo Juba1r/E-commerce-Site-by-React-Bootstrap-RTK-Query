@@ -41,7 +41,7 @@ const ProductComponent = () => {
         <span className="Deals"> Elektronica</span> deals en <br />
         Aanbiedingen
       </h1>
-      <div className="product-list row row-cols-4 d-flex justify-content-center ">
+      <div className="product-list row row-cols-lg-4 d-flex justify-content-center ">
         {productData.map((product, index) => (
           <div key={index} className="product-card">
             <img
